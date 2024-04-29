@@ -1,0 +1,300 @@
+<!-- <div class="dashboard-container">
+    <div class="dashboard-nav">
+        <span class="welcome">Bem-vindo, Jesus Reis!</span>
+        <div class="filter">
+            <mat-form-field appearance="fill">
+                <mat-label>Selecione a Estação</mat-label>
+                <mat-select>
+                    <mat-option [value]="'informa'">Informa FM</mat-option>
+                    <mat-option [value]="'station'">Station FM</mat-option>
+                    <mat-option [value]="'nativa'">Nativa FM</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="dashboard-content">
+        <div class="dashboard-section participation-by-hour"> 
+            <mat-card class="card">
+                <div class="avatar">
+                    <img src="https://iscast.com.br/assets/img/bg/radio-iscast.png" alt="">
+                </div>
+                <div class="chart">
+                    <div class="title">
+                        <span class="label-m">
+                            Participações por Horário
+                        </span>
+                        <div class="filter">
+                            <span class="label-m">Hoje</span>
+                            <span class="label-m">Semanal</span>
+                            <span class="label-m">Mensal</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <canvas id="participationByHour"></canvas>
+                    </div>
+                </div>
+            </mat-card>      
+        </div>
+        <div class="dashboard-section dashboard-score">
+            <mat-card class="card">
+                <mat-card-content class="content">
+                    <span><mat-icon class="icon">radio</mat-icon></span>
+                    <div class="description">
+                        <span class="label-m grey-text">Participações em Programas</span>
+                        <span class="strong">15</span>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+            <mat-card class="card">
+                <mat-card-content class="content">
+                    <span><mat-icon class="icon">radio</mat-icon></span>
+                    <div class="description">
+                        <span class="label-m grey-text">Participações em Programas</span>
+                        <span class="strong">45</span>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+
+            <mat-card class="card">
+                <mat-card-content class="content">
+                    <span><mat-icon class="icon">check_circle</mat-icon></span>
+                    <div class="description">
+                        <span class="label-m grey-text">Participações Atendidas</span>
+                        <span class="strong">22</span>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+            <mat-card class="card">
+                <mat-card-content class="content">
+                    <span><mat-icon class="icon">error</mat-icon></span>
+                    <div class="description">
+                        <span class="label-m grey-text">Aguardando Atendimento</span>
+                        <span class="strong">17</span>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="dashboard-section dashboard-quantity">
+            <mat-card class="card">
+                <mat-card-content class="content">
+                    <div class="row">
+                        <div class="title">
+                            <span class="badge-item" matBadge="1" matBadgeSize="medium"></span>
+                            <span class="label-m">Ouvinte da Silva</span>
+                        </div>
+                        <div class="actions">
+                            <span matBadge="1" matBadgeSize="medium"></span>
+                            <span class="label-m">Ouvinte da Silva</span>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="title">
+                            <span matBadge="1" matBadgeSize="medium"></span>
+                            <span class="label-m">Ouvinte da Silva</span>
+                        </div>
+                        <div class="actions">
+                            <span class="label-s">15</span>
+                            <span class="label-m">
+                                <mat-icon>document</mat-icon>
+                            </span>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="title">
+                            <span matBadge="1" matBadgeSize="medium"></span>
+                            <span class="label-m">Ouvinte da Silva</span>
+                        </div>
+                        <div class="actions">
+                            <span matBadge="1" matBadgeSize="medium"></span>
+                            <span class="label-m">Ouvinte da Silva</span>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="title">
+                            <span matBadge="1" matBadgeSize="medium"></span>
+                            <span class="label-m">Ouvinte da Silva</span>
+                        </div>
+                        <div class="actions">
+                            <span matBadge="1" matBadgeSize="medium"></span>
+                            <span class="label-m">Ouvinte da Silva</span>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="title">
+                            <span matBadge="1" matBadgeSize="medium"></span>
+                            <span class="label-m">Ouvinte da Silva</span>
+                        </div>
+                        <div class="actions">
+                            <span matBadge="1" matBadgeSize="medium"></span>
+                            <span class="label-m">Ouvinte da Silva</span>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+                    
+        </div>
+        <div class="dashboard-section dashboard-charts">
+            <mat-card class="card">
+                <div class="chart-item">
+                    <span class="label-m">Programas</span>
+                    <mat-card-content class="content">
+
+                        <canvas id="participationByHour1"></canvas>
+                    </mat-card-content>
+                </div>
+                <div class="chart-item">
+                    <span class="label-m">Canais de Interação</span>
+                    <mat-card-content class="content">
+                        
+                        <canvas id="participationByHour2"></canvas>
+                    </mat-card-content>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="dashboard-container">
+    <div class="dashboard-nav">
+        <span class="welcome">Bem-vindo, Jesus Reis!</span>
+        <div class="filter">
+            <mat-form-field appearance="fill">
+                <mat-label>Selecione a Estação</mat-label>
+                <mat-select>
+                    <mat-option [value]="'informa'">Informa FM</mat-option>
+                    <mat-option [value]="'station'">Station FM</mat-option>
+                    <mat-option [value]="'nativa'">Nativa FM</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="dashboard-content">
+        <div class="byhour">
+            <div class="avatar">
+                <img src="https://iscast.com.br/assets/img/bg/radio-iscast.png" alt="">
+            </div>
+            <div class="chart">
+                <div class="title">
+                    <span class="label-m">
+                        Participações por Horário
+                    </span>
+                    <div class="filter">
+                        <span class="label-m">Hoje</span>
+                        <span class="label-m">Semanal</span>
+                        <span class="label-m">Mensal</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <canvas id="participationByHour"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="score">
+            <div class="content">
+                <span><mat-icon class="icon">radio</mat-icon></span>
+                <div class="description">
+                    <span class="label-m grey-text">Participações em Programas</span>
+                    <span class="strong">15</span>
+                </div>
+            </div>
+            <div class="content">
+                <span><mat-icon class="icon">radio</mat-icon></span>
+                <div class="description">
+                    <span class="label-m grey-text">Participações em Programas</span>
+                    <span class="strong">45</span>
+                </div>
+            </div>
+            <div class="content">
+                <span><mat-icon class="icon">check_circle</mat-icon></span>
+                <div class="description">
+                    <span class="label-m grey-text">Participações Atendidas</span>
+                    <span class="strong">22</span>
+                </div>
+            </div>
+            <div class="content">
+                <span><mat-icon class="icon">error</mat-icon></span>
+                <div class="description">
+                    <span class="label-m grey-text">Aguardando Atendimento</span>
+                    <span class="strong">17</span>
+                </div>
+            </div>
+        </div>
+        <div class="quantity">
+            <div class="content">
+                <div class="row">
+                    <div class="title">
+                        <span class="badge-item" matBadge="1" matBadgeSize="medium"></span>
+                        <span class="label-m">Ouvinte da Silva</span>
+                    </div>
+                    <div class="actions">
+                        <span class="label-m">29</span>
+                        <mat-icon class="icon">description</mat-icon>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="title">
+                        <span matBadge="1" matBadgeSize="medium"></span>
+                        <span class="label-m">Ouvinte da Silva</span>
+                    </div>
+                    <div class="actions">
+                        <span class="label-m">85</span>
+                        <mat-icon class="icon">description</mat-icon>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="title">
+                        <span matBadge="1" matBadgeSize="medium"></span>
+                        <span class="label-m">Ouvinte da Silva</span>
+                    </div>
+                    <div class="actions">
+                        <span class="label-m">15</span>
+                        <mat-icon class="icon">description</mat-icon>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="title">
+                        <span matBadge="1" matBadgeSize="medium"></span>
+                        <span class="label-m">Ouvinte da Silva</span>
+                    </div>
+                    <div class="actions">
+                        <span class="label-m">37</span>
+                        <mat-icon class="icon">description</mat-icon>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="title">
+                        <span matBadge="1" matBadgeSize="medium"></span>
+                        <span class="label-m">Ouvinte da Silva</span>
+                    </div>
+                    <div class="actions">
+                        <span class="label-m">15</span>
+                        <mat-icon class="icon">description</mat-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="row">
+                <span class="label-m">Programas</span>
+                <div class="content">
+                    <canvas id="participationByHour1"></canvas>
+                </div>
+            </div>
+            <div class="row">
+                <span class="label-m">Canais de Interação</span>
+                <div class="content">
+                    <canvas id="participationByHour2"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

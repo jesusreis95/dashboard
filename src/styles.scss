@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// Headline
+h1, h2, h3,
+.headline-l, .headline-m, .headline-s { 
+  padding: 0; 
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+}
+h1, .headline-l { font-size: 32px; line-height: 40px; }
+h2, .headline-m { font-size: 28px; line-height: 36px; }
+h3, .headline-s { font-size: 24px; line-height: 32px; }
+
+
+// Title
+.title-l, .title-m, .title-s { font-style: normal; font-weight: 500; }
+
+.title-l { font-size: 22px; line-height: 28px; } 
+.title-m { font-size: 16px; line-height: 24px; letter-spacing: 0.15px; } 
+.title-s { font-size: 14px; line-height: 20px; letter-spacing: 0.10px; } 
+
+
+// Body
+.body-l, .body-m, .body-s { font-style: normal; font-weight: 400; }
+
+.body-l { font-size: 16px; line-height: 24px; letter-spacing: 0.5px;  }
+.body-m { font-size: 14px; line-height: 20px; letter-spacing: 0.25px; }
+.body-s { font-size: 12px; line-height: 16px; letter-spacing: 0.4px;  }
+
+
+// Label
+.label-l, .label-m, .label-s { font-style: normal; font-weight: 500; }
+
+.label-l { font-size: 14px; line-height: 20px; letter-spacing: 0.1px; }
+.label-m { font-size: 12px; line-height: 16px; letter-spacing: 0.5px; }
+.label-s { font-size: 11px; line-height: 16px; letter-spacing: 0.5px; }
+
+// SubHead
+.subhead-l, .subhead-s { font-style: normal; font-weight: 500; }
+
+.subhead-l { font-size: 16px; line-height: 24px; letter-spacing: 0.15px; }
+.subhead-s { font-size: 14px; line-height: 20px; letter-spacing: 0.1px;  }

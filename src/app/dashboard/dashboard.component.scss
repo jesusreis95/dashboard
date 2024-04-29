@@ -1,0 +1,312 @@
+:host {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 90vh;
+    padding: 0 2rem;
+    background-color: rgb(220, 220, 220);
+
+    .dashboard-nav {
+      display: flex;
+      grid-column: 100%;
+      grid-row: 1/2;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .welcome {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+        font-weight: bolder;
+        color: #2f2f2f;
+      }
+
+      .filter {
+        display: block;
+        padding-bottom: 0 !important;
+
+        ::ng-deep .mat-mdc-form-field-subscript-wrapper {
+          display: none !important;
+        }
+      }
+    }
+
+    .dashboard-content {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: calc(30% - 1rem) calc(70% - 1rem);
+      grid-column: 100%;
+      grid-row: 2/3;
+      grid-gap: 1rem;
+
+      div {
+        border-radius: 2.5rem;
+        background-color: #FFF;
+      }
+
+      .byhour {
+        display: flex;
+        grid-column: 1/8;
+        grid-row: 1/2;
+        padding: 1rem 2rem;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 2rem;
+
+        .avatar {
+          display: flex;
+          max-height: 180px;
+          max-width: 340px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .chart {
+          display: flex;
+          flex-direction: column;
+
+          .title {
+            display: flex;
+            flex-direction: row;
+            padding: 0.5rem 0;
+            justify-content: space-between;
+
+            .filter {
+              display: flex;
+              column-gap: 1rem;
+
+              span {
+                text-decoration: underline;
+              }
+            }
+          }
+
+          .content {
+            display: flex;
+            border-radius: 10px;
+            height: 100%;
+
+            canvas {
+              padding: 1rem;
+            }
+          }
+        }
+      }
+
+      .score {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: rgb(220, 220, 220);
+        grid-gap: 1rem;
+        grid-column: 8/13;
+        grid-row: 1/2;
+
+        div {
+          border-radius: 20px;
+        }
+
+        .content {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          min-height: 100px;
+          column-gap: 2rem;
+
+          .icon {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            font-size: 36pt !important;
+            color: rgb(1, 87, 122);
+          }
+
+          .description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            row-gap: 1rem;
+
+            .grey-text {
+              color: rgb(111, 112, 112);
+            }
+
+            .strong {
+              font-size: 24pt;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      .quantity {
+        display: grid;
+        grid-column: 1/7;
+        grid-row: 2/3;
+        padding: 2rem;
+
+        .content {
+          .row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+
+            .title {
+              display: flex;
+              align-items: center;
+              column-gap: 1rem;
+              ::ng-deep .mat-badge-content {
+                background-color: rgb(1, 87, 122);
+              }
+            }
+
+            .actions {
+              display: flex;
+              align-items: center;
+              column-gap: 1rem;
+              .label-m { font-size: 12px; font-weight: 400; }
+              .icon { color: rgb(1, 87, 122); }
+            }
+          }
+        }
+      }
+
+      .charts {
+        display: grid;
+        grid-column: 7/13;
+        grid-row: 2/3;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1rem;
+        background-color: rgb(220, 220, 220);
+
+        .row {
+          padding: 1rem 2rem;
+        }
+
+        canvas {
+          height: 200px !important;
+          width: 400px !important;
+        }
+      }
+
+    }
+  }
+
+  @media only screen and (max-width: 1500px) {
+    .dashboard-container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      padding: 1rem;
+
+      @media screen and (max-width: 550px) {
+        .dashboard-nav {
+          display: flex;
+          flex-direction: column;
+          row-gap: 1rem;
+          align-items: initial;
+
+          .welcome {
+            text-align: center;
+          }
+
+          .filter {
+            display: flex;
+            align-self: center;
+          }
+        }
+      }
+
+      .dashboard-content {
+        display: flex;
+        flex-flow: column nowrap;
+        flex-basis: 100%;
+
+        .charts {
+          display: flex;
+          flex-direction: column;
+        }
+
+        @media screen and (max-width: 900px) {
+          .byhour {
+            display: flex;
+            flex-direction: column;
+            height: initial;
+          }
+        }
+
+        @media only screen and (max-width: 750px) {
+          .score {
+            .content {
+              column-gap: 1rem;
+            }
+          }
+
+          .byhour {
+            .title {
+              flex-direction: column;
+              align-items: center;
+              row-gap: 1rem;
+            }
+          }
+        }
+
+        @media only screen and (max-width: 650px) {
+          .score {
+            display: flex;
+            flex-flow: column nowrap;
+            height: initial;
+          }
+        }
+
+        @media only screen and (max-width: 550px) {
+          .byhour {
+            .chart {
+              .title {
+                flex-direction: column;
+                align-items: center;
+                row-gap: 1rem;
+              }
+            }
+          }
+        }
+
+        @media only screen and (max-width: 350px) {
+          .quantity {
+            .content {
+              display: flex;
+              flex-direction: column;
+              row-gap: 1rem;
+              .row { 
+                flex-direction: row;
+                flex-wrap: wrap; 
+                row-gap: 1rem;
+                padding: 1rem;
+                border-radius: 10px;
+                background-color: #f1f1f1;
+                .title, .actions { background-color: #f1f1f1;  }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
